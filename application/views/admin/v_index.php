@@ -34,7 +34,7 @@
 <body>
 <img src="<?php echo base_url().'assets/img/bg2.jpg'?>" alt="gambar" class="bg" />
     <!-- Navigation -->
-   <?php 
+   <?php
         $this->load->view('admin/menu');
    ?>
 
@@ -56,14 +56,14 @@
 
         <!-- Projects Row -->
         <div class="row">
-         <?php if($h=='1'){ ?> 
+         <?php if($h=='1'){ ?>
             <div class="col-md-3 portfolio-item">
                 <div class="menu-item blue" style="height:150px;">
                      <a href="<?php echo base_url().'admin/penjualan'?>" data-toggle="modal">
                            <i class="fa fa-shopping-bag"></i>
                             <p style="text-align:left;font-size:14px;padding-left:5px;">Penjualan Eceran</p>
                       </a>
-                </div> 
+                </div>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="menu-item green" style="height:150px;">
@@ -71,7 +71,7 @@
                            <i class="fa fa-cubes"></i>
                             <p style="text-align:left;font-size:14px;padding-left:5px;">Penjualan Grosir</p>
                       </a>
-                </div> 
+                </div>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="menu-item light-orange" style="height:150px;">
@@ -79,7 +79,7 @@
                            <i class="fa fa-truck"></i>
                             <p style="text-align:left;font-size:14px;padding-left:5px;">Supplier</p>
                       </a>
-                </div> 
+                </div>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="menu-item color" style="height:150px;">
@@ -87,17 +87,17 @@
                            <i class="fa fa-sitemap"></i>
                             <p style="text-align:left;font-size:14px;padding-left:5px;">Kategori</p>
                       </a>
-                </div> 
+                </div>
             </div>
             <?php }?>
-            <?php if($h=='2'){ ?> 
+            <?php if($h=='2'){ ?>
             <div class="col-md-3 portfolio-item">
                 <div class="menu-item blue" style="height:150px;">
                      <a href="#" data-toggle="modal">
                            <i class="fa fa-shopping-cart"></i>
                             <p style="text-align:left;font-size:14px;padding-left:5px;">Penjualan Eceran</p>
                       </a>
-                </div> 
+                </div>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="menu-item green" style="height:150px;">
@@ -105,7 +105,7 @@
                            <i class="fa fa-users"></i>
                             <p style="text-align:left;font-size:14px;padding-left:5px;">Penjualan Grosir</p>
                       </a>
-                </div> 
+                </div>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="menu-item light-orange" style="height:150px;">
@@ -113,7 +113,7 @@
                            <i class="fa fa-truck"></i>
                             <p style="text-align:left;font-size:14px;padding-left:5px;">Supplier</p>
                       </a>
-                </div> 
+                </div>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="menu-item color" style="height:150px;">
@@ -121,23 +121,23 @@
                            <i class="fa fa-sitemap"></i>
                             <p style="text-align:left;font-size:14px;padding-left:5px;">Kategori</p>
                       </a>
-                </div> 
+                </div>
             </div>
             <?php }?>
         </div>
-        
+
         <!-- /.row -->
 
         <!-- Projects Row -->
         <div class="row">
-        <?php if($h=='1'){ ?> 
+        <?php if($h=='1'){ ?>
             <div class="col-md-3 portfolio-item">
                 <div class="menu-item purple" style="height:150px;">
                      <a href="<?php echo base_url().'admin/barang'?>" data-toggle="modal">
                            <i class="fa fa-shopping-cart"></i>
                             <p style="text-align:left;font-size:14px;padding-left:5px;">Barang</p>
                       </a>
-                </div> 
+                </div>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="menu-item red" style="height:150px;">
@@ -145,7 +145,7 @@
                            <i class="fa fa-users"></i>
                             <p style="text-align:left;font-size:14px;padding-left:5px;">Pengguna</p>
                       </a>
-                </div> 
+                </div>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="menu-item blue" style="height:150px;">
@@ -153,7 +153,7 @@
                            <i class="fa fa-bar-chart"></i>
                             <p style="text-align:left;font-size:14px;padding-left:5px;">Laporan</p>
                       </a>
-                </div> 
+                </div>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="menu-item light-red" style="height:150px;">
@@ -161,17 +161,17 @@
                            <i class="fa fa-cubes"></i>
                             <p style="text-align:left;font-size:14px;padding-left:5px;">Pembelian</p>
                       </a>
-                </div> 
+                </div>
             </div>
             <?php }?>
-            <?php if($h=='2'){ ?> 
+            <?php if($h=='2'){ ?>
             <div class="col-md-3 portfolio-item">
                 <div class="menu-item purple" style="height:150px;">
                      <a href="<?php echo base_url().'admin/penjualan_grosir'?>" data-toggle="modal">
                            <i class="fa fa-cubes"></i>
                             <p style="text-align:left;font-size:14px;padding-left:5px;">Penjualan Grosir</p>
                       </a>
-                </div> 
+                </div>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="menu-item red" style="height:150px;">
@@ -179,7 +179,7 @@
                            <i class="fa fa-shopping-bag"></i>
                             <p style="text-align:left;font-size:14px;padding-left:5px;">Penjualan Eceran</p>
                       </a>
-                </div> 
+                </div>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="menu-item blue" style="height:150px;">
@@ -187,7 +187,7 @@
                            <i class="fa fa-bar-chart"></i>
                             <p style="text-align:left;font-size:14px;padding-left:5px;">Laporan</p>
                       </a>
-                </div> 
+                </div>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="menu-item light-red" style="height:150px;">
@@ -195,14 +195,53 @@
                            <i class="fa fa-cubes"></i>
                             <p style="text-align:left;font-size:14px;padding-left:5px;">Pembelian</p>
                       </a>
-                </div> 
+                </div>
             </div>
             <?php }?>
         </div>
-        
-		
+
+
         <!-- /.row -->
-	
+
+    </div>
+
+    <!-- ============ MODAL ADD =============== -->
+    <div class="modal fade" id="input_nofaktur" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 class="modal-title" id="myModalLabel">Cetak Ulang Faktur</h3>
+        </div>
+        <form class="form-horizontal" method="post" action="<?php echo base_url().'admin/laporan/lap_penjualan_perbulan'?>" target="_blank">
+            <div class="modal-body">
+
+                <div class="form-group">
+                    <label class="control-label col-xs-3" >No. Faktur</label>
+                    <div class="col-xs-9">
+                            <select name="bln" class="selectpicker show-tick form-control" data-live-search="true" title="Pilih Bulan" data-width="80%" required/>
+                            <?php //foreach ($jual_bln->result_array() as $k) {
+                                //$bln=$k['bulan'];
+                            ?>
+                                <option><?php //echo $bln;?></option>
+                            <?php //}?>
+                            </select>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Tutup</button>
+                <button class="btn btn-info"><span class="fa fa-print"></span> Cetak</button>
+            </div>
+        </form>
+        </div>
+        </div>
+    </div>
+
+  </div>
     <!-- /.container -->
 
     <!-- jQuery -->

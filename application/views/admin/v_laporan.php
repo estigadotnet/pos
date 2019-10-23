@@ -27,7 +27,7 @@
 <body>
 
     <!-- Navigation -->
-   <?php 
+   <?php
         $this->load->view('admin/menu');
    ?>
 
@@ -55,7 +55,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                
+
                     <tr>
                         <td style="text-align:center;vertical-align:middle">1</td>
                         <td style="vertical-align:middle;">Laporan Data Barang</td>
@@ -85,6 +85,7 @@
                         <td style="vertical-align:middle;">Laporan Penjualan PerTanggal</td>
                         <td style="text-align:center;">
                             <a class="btn btn-sm btn-default" href="#lap_jual_pertanggal" data-toggle="modal"><span class="fa fa-print"></span> Print</a>
+                            <a class="btn btn-sm btn-default" href="#input_nofaktur" data-toggle="modal"><span class="fa fa-print"></span> Print</a>
                         </td>
                     </tr>
 
@@ -111,7 +112,7 @@
                             <a class="btn btn-sm btn-default" href="#lap_laba_rugi" data-toggle="modal"><span class="fa fa-print"></span> Print</a>
                         </td>
                     </tr>
-              
+
                 </tbody>
             </table>
             </div>
@@ -139,7 +140,7 @@
                             </div>
                         </div>
                     </div>
-                           
+
 
                 </div>
 
@@ -175,7 +176,7 @@
                                 </select>
                         </div>
                     </div>
-                           
+
 
                 </div>
 
@@ -211,7 +212,7 @@
                                 </select>
                         </div>
                     </div>
-                           
+
 
                 </div>
 
@@ -248,7 +249,7 @@
                                 </select>
                         </div>
                     </div>
-                           
+
 
                 </div>
 
@@ -260,7 +261,10 @@
             </div>
             </div>
         </div>
-        
+
+
+
+
 
         <!--END MODAL-->
 
@@ -294,7 +298,7 @@
                 $('#datetimepicker').datetimepicker({
                     format: 'DD MMMM YYYY HH:mm',
                 });
-                
+
                 $('#datepicker').datetimepicker({
                     format: 'YYYY-MM-DD',
                 });
@@ -312,7 +316,7 @@
             $('#mydata').DataTable();
         } );
     </script>
-    
+
 </body>
 
 </html>
