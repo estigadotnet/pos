@@ -35,6 +35,7 @@
                             <li><a href="<?php echo base_url().'admin/penjualan'?>"><span class="fa fa-shopping-bag" aria-hidden="true"></span> Penjualan (Eceran)</a></li>
                             <li><a href="<?php echo base_url().'admin/penjualan_grosir'?>"><span class="fa fa-cubes" aria-hidden="true"></span> Penjualan (Grosir)</a></li>
                             <li><a href="<?php echo base_url().'admin/retur'?>"><span class="fa fa-refresh" aria-hidden="true"></span> Retur</a></li>
+                            <li><a href="<?php echo base_url().'admin/penjualan/cetak_faktur'?>"><span class="fa fa-print" aria-hidden="true"></span> Cetak Faktur</a></li>
                         </ul>
                     </li>
                     <!--ending dropdown-->
