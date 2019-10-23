@@ -96,15 +96,15 @@ class Penjualan extends CI_Controller{
 				$order_proses=$this->m_penjualan->simpan_penjualan($nofak,$total,$jml_uang,$kembalian);
 				if($order_proses){
 					$this->cart->destroy();
-					
+
 					$this->session->unset_userdata('tglfak');
 					$this->session->unset_userdata('suplier');
-					$this->load->view('admin/alert/alert_sukses');	
+					$this->load->view('admin/alert/alert_sukses');
 				}else{
 					redirect('admin/penjualan');
 				}
 			}
-			
+
 		}else{
 			echo $this->session->set_flashdata('msg','<label class="label label-danger">Penjualan Gagal di Simpan, Mohon Periksa Kembali Semua Inputan Anda!</label>');
 			redirect('admin/penjualan');
@@ -116,6 +116,12 @@ class Penjualan extends CI_Controller{
 	}
 
 	function cetak_faktur(){
+		$x['data']=$this->m_penjualan->cetak_faktur();
+		$this->load->view('admin/laporan/v_faktur',$x);
+		//$this->session->unset_userdata('nofak');
+	}
+
+	function cetak_ulang_faktur(){
 		$x['data']=$this->m_penjualan->cetak_faktur();
 		$this->load->view('admin/laporan/v_faktur',$x);
 		//$this->session->unset_userdata('nofak');
