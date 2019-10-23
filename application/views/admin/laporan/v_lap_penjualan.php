@@ -6,19 +6,31 @@
 </head>
 <body onload="window.print()">
 <div id="laporan">
-<table align="center" style="width:900px; border-bottom:3px double;border-top:none;border-right:none;border-left:none;margin-top:5px;margin-bottom:20px;">
+<?php
+foreach($rstoko->result() as $toko):
+  $toko_nama = $toko->toko_nama;
+  $toko_alamat = $toko->toko_alamat;
+  $toko_nohp = $toko->toko_nohp;
+  $toko_kota = $toko->toko_kota;
+endforeach;
+?>
+<!-- <table align="center" style="width:900px; border-bottom:3px double;border-top:none;border-right:none;border-left:none;margin-top:5px;margin-bottom:20px;"> -->
+<table align="center" style="width:900px; border-bottom:none;border-top:none;border-right:none;border-left:none;margin-top:5px;margin-bottom:20px;">
 <!--<tr>
     <td><img src="<?php// echo base_url().'assets/img/kop_surat.png'?>"/></td>
 </tr>-->
+<tr><td><?php echo $toko_nama;?></td></tr>
+<tr><td><?php echo $toko_alamat;?></td></tr>
+<tr><td><?php echo $toko_kota;?></td></tr>
 </table>
 
 <table border="0" align="center" style="width:800px; border:none;margin-top:5px;margin-bottom:0px;">
 <tr>
     <td colspan="2" style="width:800px;paddin-left:20px;"><center><h4>LAPORAN PENJUALAN BARANG</h4></center><br/></td>
 </tr>
-                       
+
 </table>
- 
+
 <table border="0" align="center" style="width:900px;border:none;">
         <tr>
             <th style="text-align:left"></th>
@@ -41,7 +53,10 @@
     </tr>
 </thead>
 <tbody>
-<?php 
+<?php
+
+
+
 $no=0;
     foreach ($data->result_array() as $i) {
         $no++;
@@ -70,7 +85,7 @@ $no=0;
 <?php }?>
 </tbody>
 <tfoot>
-<?php 
+<?php
     $b=$jml->row_array();
 ?>
     <tr>
@@ -85,15 +100,15 @@ $no=0;
 </table>
 <table align="center" style="width:800px; border:none;margin-top:5px;margin-bottom:20px;">
     <tr>
-        <td align="right">Padang, <?php echo date('d-M-Y')?></td>
+        <td align="right"><?php foreach($rstoko->result() as $i): echo $i->toko_kota; endforeach;?>, <?php echo date('d-M-Y')?></td>
     </tr>
     <tr>
         <td align="right"></td>
     </tr>
-   
+
     <tr>
     <td><br/><br/><br/><br/></td>
-    </tr>    
+    </tr>
     <tr>
         <td align="right">( <?php echo $this->session->userdata('nama');?> )</td>
     </tr>

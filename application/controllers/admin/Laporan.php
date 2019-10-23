@@ -12,6 +12,7 @@ class Laporan extends CI_Controller{
 		$this->load->model('m_pembelian');
 		$this->load->model('m_penjualan');
 		$this->load->model('m_laporan');
+		$this->load->model("m_toko");
 	}
 	function index(){
 	if($this->session->userdata('akses')=='1'){
@@ -33,6 +34,7 @@ class Laporan extends CI_Controller{
 		$this->load->view('admin/laporan/v_lap_barang',$x);
 	}
 	function lap_data_penjualan(){
+		$x["rstoko"] = $this->m_toko->get_toko();
 		$x['data']=$this->m_laporan->get_data_penjualan();
 		$x['jml']=$this->m_laporan->get_total_penjualan();
 		$this->load->view('admin/laporan/v_lap_penjualan',$x);

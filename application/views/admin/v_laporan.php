@@ -85,7 +85,6 @@
                         <td style="vertical-align:middle;">Laporan Penjualan PerTanggal</td>
                         <td style="text-align:center;">
                             <a class="btn btn-sm btn-default" href="#lap_jual_pertanggal" data-toggle="modal"><span class="fa fa-print"></span> Print</a>
-                            <a class="btn btn-sm btn-default" href="#input_nofaktur" data-toggle="modal"><span class="fa fa-print"></span> Print</a>
                         </td>
                     </tr>
 
