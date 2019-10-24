@@ -122,10 +122,12 @@ class Penjualan extends CI_Controller{
 	}
 
 	function cetak_ulang_faktur(){
-		$x['data']=$this->m_penjualan->cetak_faktur();
-		$this->load->view('admin/laporan/v_faktur',$x);
+		$nofak=$this->input->post("no_faktur");
+		$this->session->set_userdata('nofak',$nofak);
+		$this->cetak_faktur();
+		// $x['data']=$this->m_penjualan->cetak_faktur();
+		// $this->load->view('admin/laporan/v_faktur',$x);
 		//$this->session->unset_userdata('nofak');
 	}
-
 
 }

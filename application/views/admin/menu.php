@@ -35,8 +35,9 @@
                             <li><a href="<?php echo base_url().'admin/penjualan'?>"><span class="fa fa-shopping-bag" aria-hidden="true"></span> Penjualan (Eceran)</a></li>
                             <li><a href="<?php echo base_url().'admin/penjualan_grosir'?>"><span class="fa fa-cubes" aria-hidden="true"></span> Penjualan (Grosir)</a></li>
                             <li><a href="<?php echo base_url().'admin/retur'?>"><span class="fa fa-refresh" aria-hidden="true"></span> Retur</a></li>
-                            <li><a href="#input_nofaktur_eceran" data-toggle="modal"><span class="fa fa-print" aria-hidden="true"></span> Cetak Faktur Penjualan Eceran</a></li>
-                            <li><a href="#input_nofaktur_grosir" data-toggle="modal"><span class="fa fa-print" aria-hidden="true"></span> Cetak Faktur Penjualan Grosir</a></li>
+                            <li><a href="#input_nofaktur" data-toggle="modal"><span class="fa fa-print" aria-hidden="true"></span> Cetak Ulang Faktur Penjualan</a></li>
+                            <!-- <li><a href="#input_nofaktur_eceran" data-toggle="modal"><span class="fa fa-print" aria-hidden="true"></span> Cetak Faktur Penjualan Eceran</a></li>
+                            <li><a href="#input_nofaktur_grosir" data-toggle="modal"><span class="fa fa-print" aria-hidden="true"></span> Cetak Faktur Penjualan Grosir</a></li> -->
                         </ul>
                     </li>
                     <!--ending dropdown-->
@@ -71,3 +72,29 @@
         </div>
         <!-- /.container -->
     </nav>
+
+    <!-- ============ nofaktur =============== -->
+    <div class="modal fade" id="input_nofaktur" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 class="modal-title" id="myModalLabel">Cetak Ulang Faktur Penjualan</h3>
+        </div>
+        <form class="form-horizontal" method="post" action="<?php echo base_url().'admin/penjualan/cetak_ulang_faktur'?>" target="_blank">
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="control-label col-xs-3" >No. Faktur</label>
+                    <div class="col-xs-9">
+                      <input type="text" name="no_faktur" class="form-control" placeholder="Nomor Faktur">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Tutup</button>
+                <button class="btn btn-info"><span class="fa fa-print"></span> Cetak</button>
+            </div>
+        </form>
+        </div>
+        </div>
+    </div>
